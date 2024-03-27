@@ -31,9 +31,9 @@ app.get('/', (req, res) => {
 
 app.post('/add_employee',employeeController.addEmployee)
 
-app.post('/get_employee',employeeController.getEmployee)
+app.post('/get_employee_byFilter',employeeController.getEmployee)
 
-app.get('/get_employee_byId' , employeeController.getEmployeeById)
+app.get('/get_employee' , employeeController.getEmployeeById)
 
 app.listen(port, () => {
     console.log(`[server]: Server is running at http://localhost:${port}`);
