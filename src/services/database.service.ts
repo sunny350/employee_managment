@@ -23,7 +23,7 @@ class DatabaseService {
         return await this.employeeModel.find({department : filter.department})
     }
     else{
-        throw new Error('invalid filter')
+      return await this.employeeModel.find({}).sort({employee_id : 1})
     }
   }
 
